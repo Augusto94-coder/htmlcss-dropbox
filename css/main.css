@@ -71,3 +71,39 @@ body {
   margin-top: 1rem;
 }
 
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: #e0e0e0;
+  color: #111;
+}
+
+.pricing {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.billing-toggle{
+    margin: 1em;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+
