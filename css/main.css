@@ -53,6 +53,9 @@ body {
   background-color: #e6f0ff;
   text-align: center;
   padding: 4rem 2rem;
+  position: relative;
+  overflow: visible;
+  height: 553px;
 }
 
 .jumbotron h1 {
@@ -65,9 +68,48 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 2rem 0;
+  position: relative;
 }
 
-.welcome {
+.jumbotron-welcome {
+  display: flex;
+  width:100%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.welcome p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.jumbotron-welcome .left-col{
+  width: 40%;
+  align-items: center;
+  padding: 10px;
+}
+
+.jumbotron-image {
+  height: auto;
+}
+.jumbotron-image img {
+  position: absolute;
+  top: 50%;
+  right: -100px;            /* negativo per farla sbordare */
+  overflow: visible;
+  z-index: 1;
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.arrow-down {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
   
 }
 
@@ -92,6 +134,7 @@ body {
 }
 
 .pricing {
+  padding-top: 100px;
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -168,11 +211,29 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2rem;
 }
 
-.footer-columns div {
-  flex: 1 1 150px;
+.footer-columns  div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+} 
+
+.footer-columns li {
+  display: block;
+  margin-bottom: 0.5rem;   
+}
+
+.footer-columns h4{
   margin-bottom: 1rem;
 }
+
+.footer-columns a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
 
 
